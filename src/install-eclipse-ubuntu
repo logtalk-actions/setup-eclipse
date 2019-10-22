@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -eo pipefail
+
+version=$1
+
+tmp_dir=$(mktemp -d -t eclipse-XXXXXXXXXX)
+cd $tmp_dir
+
+wget https://eclipseclp.org/Distribution/Builds/$version/x86_64_linux/eclipse_basic.tgz
+wget https://eclipseclp.org/Distribution/Builds/$version/x86_64_linux/UNPACK
+
+chmod a+x UNPACK
+./UNPACK
+
+chmod a+x RUNME
+printf '\n\n/usr/local/bin\n\ns\ns\n' | sudo ./RUNME --no-link --no-docs

@@ -1,0 +1,13 @@
+name: Setup ECLiPSe
+description: Installs the specified ECLiPSe version
+inputs:
+  eclipse-version:
+    description: ECLiPSe version to install
+    required: true
+    default: '7.0_50'
+runs:
+  using: 'node12'
+  main: 'src/setup-eclipse.js'
+branding:
+  icon: 'box'
+  color: 'blue'

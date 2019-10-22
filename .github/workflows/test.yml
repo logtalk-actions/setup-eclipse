@@ -1,0 +1,17 @@
+name: Test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.operating-system }}
+    strategy:
+      matrix:
+        operating-system: [ubuntu-latest]
+    steps:
+      - name: Install ECLiPSe
+        uses: logtalk-actions/setup-eclipse@master
+        with:
+          eclipse-version: '7.0_50'
+      - name: Run trivial sanity test
+        run: eclipse -e true -e halt
