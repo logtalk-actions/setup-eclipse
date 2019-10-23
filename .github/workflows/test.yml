@@ -15,3 +15,9 @@ jobs:
           eclipse-version: '7.0_50'
       - name: Run trivial sanity test
         run: eclipse -e true -e halt
+      - name: Install Logtalk
+        uses: logtalk-actions/setup-logtalk@master
+        with:
+          logtalk-version: latest
+      - name: Run Logtalk aliases example tests
+        run: cd ~/logtalk/examples/aliases && logtalk_tester -p eclipse
