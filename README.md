@@ -3,7 +3,6 @@
 This actions sets up a ECliPSe environment for use in workflows.
 
 ![](https://github.com/logtalk-actions/setup-eclipse/workflows/Test/badge.svg)
-![](https://github.com/logtalk-actions/setup-eclipse/workflows/Logtalk/badge.svg)
 
 # Usage
 
@@ -18,13 +17,16 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: logtalk-actions/setup-eclipse@master
+      - name: Install ECliPSe backend
+        uses: logtalk-actions/setup-eclipse@master
         with:
           eclipse-version: latest
-      - uses: logtalk-actions/setup-logtalk@master
+      - name: Install Logtalk
+        uses: logtalk-actions/setup-logtalk@master
         with:
           logtalk-version: latest
-      - uses: actions/checkout@v1
+      - name: Checkout Logtalk application to be tested
+        uses: actions/checkout@v1
 ```
 
 # License
