@@ -18,4 +18,6 @@ jobs:
         with:
           logtalk-version: latest
       - name: Run Logtalk aliases example tests
-        run: eclipselgt -e "{aliases(tester)}" -e halt
+        run: |
+          cd /home/runner/logtalk/examples/aliases
+          logtalk_tester -p eclipse
