@@ -1,6 +1,6 @@
 # `setup-eclipse`
 
-This actions sets up a ECliPSe environment for use in workflows.
+This actions sets up an ECliPSe environment for use in workflows.
 
 ![](https://github.com/logtalk-actions/setup-eclipse/workflows/Test/badge.svg)
 
