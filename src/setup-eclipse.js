@@ -8,10 +8,10 @@ main().catch(err => {
 async function main() {
   checkPlatform()
 
-  const eclipseSpec = core.getInput('eclipse-version', {required: true})
+  const version = core.getInput('eclipse-version', {required: true})
 
-  console.log(`##[group]Installing ECLiPSe ${eclipseSpec}`)
-  await installECLiPSe(eclipseSpec)
+  console.log(`##[group]Installing ECLiPSe ${version}`)
+  await installECLiPSe(version)
   console.log(`##[endgroup]`)
 }
 
