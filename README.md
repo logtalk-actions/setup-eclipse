@@ -20,7 +20,7 @@ jobs:
       - name: Install ECliPSe backend
         uses: logtalk-actions/setup-eclipse@master
         with:
-          eclipse-version: latest
+          eclipse-version: '7.0_50'
       - name: Install Logtalk
         uses: logtalk-actions/setup-logtalk@master
         with:
@@ -37,4 +37,4 @@ This project is released under the [Apache License 2.0](LICENSE).
 
 ## Current Status
 
-This action is in active development. This action only supports Linux at this time.
+This action is in active development. This action only supports Linux at this time. The exact version must be specified (i.e. `latest` cannot currently be used).
