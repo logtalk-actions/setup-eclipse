@@ -12,7 +12,7 @@ jobs:
       - name: Install ECLiPSe
         uses: logtalk-actions/setup-eclipse@master
         with:
-          eclipse-version: '7.0_50'
+          eclipse-version: latest
       - name: Run trivial sanity test
         run: eclipse -e true -e halt
       - name: Install Logtalk
