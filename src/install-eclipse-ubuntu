@@ -8,8 +8,8 @@ tmp_dir=$(mktemp -d -t eclipse-XXXXXXXXXX)
 cd $tmp_dir
 
 if [ "$version" == "latest" ] ; then
-	wget  -r --no-parent -A '*x86_64_linux Intel-64bit-Linux//eclipse_basic.tgz' https://eclipseclp.org/Distribution/CurrentRelease/
-	wget  -r --no-parent -A '*x86_64_linux Intel-64bit-Linux//UNPACK' https://eclipseclp.org/Distribution/CurrentRelease/
+	wget  -r --no-parent -A '*x86_64_linux Intel-64bit-Linux/eclipse_basic.tgz' https://eclipseclp.org/Distribution/CurrentRelease/
+	wget  -r --no-parent -A '*x86_64_linux Intel-64bit-Linux/UNPACK' https://eclipseclp.org/Distribution/CurrentRelease/
 else
 	wget https://eclipseclp.org/Distribution/Builds/$version/x86_64_linux/eclipse_basic.tgz
 	wget https://eclipseclp.org/Distribution/Builds/$version/x86_64_linux/UNPACK
