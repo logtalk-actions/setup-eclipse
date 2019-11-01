@@ -6,7 +6,7 @@ This actions sets up an ECliPSe environment for use in workflows.
 
 ## Usage
 
-See [action.yml](action.yml).
+See [action.yml](action.yml) for the action metadata. The required `eclipse-version` input parameter specifies the version to be installed (e.g. `'7.0_50'`; no default).
 
 ## Example
 
