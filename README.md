@@ -6,7 +6,7 @@ This actions sets up an ECliPSe environment for use in workflows.
 
 ## Usage
 
-See [action.yml](action.yml) for the action metadata. The required `eclipse-version` input parameter specifies the version to be installed (e.g. `'7.0_50'`; no default).
+See [action.yml](action.yml) for the action metadata. The required `eclipse-version` input parameter specifies the version to be installed (e.g. `'7.0_54'`; no default). If you choose a specific version, make sure that it is still available for downloading from the ECliPSe website.
 
 ## Example
 
@@ -20,7 +20,7 @@ jobs:
       - name: Install ECliPSe backend
         uses: logtalk-actions/setup-eclipse@master
         with:
-          eclipse-version: '7.0_50'
+          eclipse-version: '7.0_54'
       - name: Install Logtalk
         uses: logtalk-actions/setup-logtalk@master
         with:
