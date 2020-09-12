@@ -4,7 +4,7 @@ inputs:
   eclipse-version:
     description: ECLiPSe version to install
     required: true
-    default: '7.0_50'
+    default: '7.0_54'
 runs:
   using: 'node12'
   main: 'src/setup-eclipse.js'
