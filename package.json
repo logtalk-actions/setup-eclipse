@@ -1,25 +1,25 @@
 {
-  "name": "setup-eclipse",
+  "name": "setup-ciao-prolog",
   "version": "1.0.0",
-  "description": "This actions sets up a ECliPSe environment for use in workflows.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/logtalk-actions/setup-eclipse.git"
+    "url": "git+https://github.com/logtalk-actions/setup-ciao-prolog.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/logtalk-actions/setup-eclipse/issues"
+    "url": "https://github.com/logtalk-actions/setup-ciao-prolog/issues"
   },
-  "homepage": "https://github.com/logtalk-actions/setup-eclipse#readme",
+  "homepage": "https://github.com/logtalk-actions/setup-ciao-prolog#readme",
   "dependencies": {
     "@actions/core": "^1.6.0",
     "@actions/exec": "^1.1.0",
-    "@actions/github": "^1.1.0"
+    "@actions/github": "^5.0.0"
   }
 }
